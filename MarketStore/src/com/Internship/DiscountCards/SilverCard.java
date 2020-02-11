@@ -8,7 +8,7 @@ public class SilverCard implements DiscountCard {
     private double purchaseValue;
 
 
-    public SilverCard(float turnover, float purchaseValue) {
+    public SilverCard(double turnover, double purchaseValue) {
 
         if (turnover < 0 || purchaseValue <0){
             turnover = 0;
