@@ -8,7 +8,7 @@ public class GoldCard implements DiscountCard {
     private double purchaseValue;
 
 
-    public GoldCard(float turnover, float purchaseValue){
+    public GoldCard(double turnover, double purchaseValue){
 
         if (turnover < 0 || purchaseValue <0){
             turnover = 0;
