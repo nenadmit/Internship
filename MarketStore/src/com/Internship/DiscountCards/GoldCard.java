@@ -10,10 +10,11 @@ public class GoldCard implements DiscountCard {
 
     public GoldCard(double turnover, double purchaseValue){
 
-        if (turnover < 0 || purchaseValue <0){
+        if (turnover < 0 )
             turnover = 0;
+        
+        if (purchaseValue<0)
             purchaseValue=0;
-        }
 
         this.turnover = turnover;
         this.purchaseValue = purchaseValue;
