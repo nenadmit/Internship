@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("---------BRONZE CARD---------------");
-        PayDesk.print(new BronzeCard(0,989879879));
+        PayDesk.print(new BronzeCard(0,150));
 
         System.out.println("---------SILVER CARD---------------");
         PayDesk.print(new SilverCard(600,850));
