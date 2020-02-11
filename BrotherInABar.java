@@ -1,9 +1,6 @@
-package com.company;
-
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.stream.IntStream;
-
 
 public class Main {
 
@@ -23,18 +20,15 @@ public class Main {
 
         // Making an instance of an ArrayList and populating it
         // with elements of an int array.
-
         ArrayList<Integer> glassesAsList = new ArrayList<Integer>();
-        Arrays.stream(glasses).forEach(i -> glassesAsList.add(i));
-
-        int counter=0;
+        Arrays.stream(glasses).forEach(i -> glassesAsList.add(i);
 
         // For loop iterates glassesAsList.size()-2 times since the algorithm check for items at indexes x+1 and x+2
         // and would throw IndexOutOfBoundsException if two last items were checked.
-
+        int counter=0;
         for (int x=0;x<glassesAsList.size()-2;++x){
 
-            //Returns true if there are three same consecutive numbers and resets the loop
+            //Returns true if there are three same consecutive numbers,resets the loop and removes the numbers from the list.
             if(glassesAsList.get(x) == glassesAsList.get(x+1) && glassesAsList.get(x) == glassesAsList.get(x+2)){
                 glassesAsList.remove(x);
                 glassesAsList.remove(x);
@@ -50,7 +44,7 @@ public class Main {
      return counter;
     }
 
-
+    //A Test method which creates and at int Array;
     public static int[] makeRandomArray(int size,int rangeOfNumbers){
 
         int[] arr = new int[size];
@@ -60,8 +54,7 @@ public class Main {
 
         for(int x=0;x<size;x++)
             arr[x] = random.nextInt(rangeOfNumbers)+1;
-
-
+        
         return arr;
     }
 
