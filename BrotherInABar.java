@@ -21,7 +21,7 @@ public int brothersInTheBar(int[] glasses){
                 break;
         }
      return counter;
-    
+     }
     
     
   
