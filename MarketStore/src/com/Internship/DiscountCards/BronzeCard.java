@@ -27,12 +27,12 @@ public class BronzeCard implements DiscountCard {
 
     @Override
     public double getDiscountRate() {
-        if (turnover >= 100 && turnover <= 300)
+        if (turnover >= 100 && turnover <= 300){
             discountRate = 1.0;
-
-        if(turnover>300)
+        }
+        else if(turnover>300){
             discountRate = 2.5;
-
+        }
         return discountRate;
     }
 
