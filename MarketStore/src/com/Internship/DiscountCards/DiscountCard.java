@@ -2,8 +2,8 @@ package com.Internship.DiscountCards;
 
 public interface DiscountCard {
 
-    public double getPurchaseValue();
+    double getPurchaseValue();
 
-    public double getDiscountRate();
+    double getDiscountRate();
 
 }
