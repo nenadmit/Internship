@@ -14,7 +14,8 @@ public class BronzeCard implements DiscountCard {
             turnover = 0;
         }
         else if (purchaseValue<0){
-        } purchaseValue=0;
+             purchaseValue=0;
+        }
 
         this.turnover = turnover;
         this.purchaseValue = purchaseValue;
